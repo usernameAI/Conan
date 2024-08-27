@@ -1,0 +1,44 @@
+drop_prob: 0.2
+embedding_size: 100
+temperature_parameter: 0.07
+gnn_layer_num: 1
+gnn_head_num: 1
+d_state: 50
+d_conv: 4
+expand: 2
+cl_loss_weight: 0.01
+san_layer_num: 3
+gridsize: 2
+use_gpu: True
+gpu_id: 0
+seed: 2023
+log_root: "./log/"
+save_dataset: False
+save_dataloaders: False
+USER_ID_FIELD: session_id
+ITEM_ID_FIELD: item_id
+TIME_FIELD: timestamp
+load_col:
+    inter: [session_id, item_id, timestamp]
+POSITION_FIELD: position_id
+ITEM_LIST_LENGTH_FIELD: item_length
+LIST_SUFFIX: _list
+MAX_ITEM_LIST_LENGTH: 20
+epochs: 1000
+train_batch_size: 100
+learner: adam
+learning_rate: 0.001
+eval_step: 1
+stopping_step: 5
+eval_args:
+    split: {'LS': 'valid_and_test'}
+    mode: full
+    order: TO
+tail_ratio: 0.8
+metrics: ['Recall', 'MRR', 'NDCG', 'GAUC']
+topk: [5, 10, 15, 20]
+valid_metric: MRR@20
+eval_batch_size: 100
+use_scheduler: True
+transform: sess_graph
+dataset_type: SessionGraph
