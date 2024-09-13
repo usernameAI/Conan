@@ -1,7 +1,7 @@
 # Conan
 This is an implemention for our paper based on Pytorch
 
-Contrastive Graph-Sequence Learning for Session-based Recommendation
+Mamba-enhanced Contrastive Graph-Sequence Learning for Session-based Recommendation
 
 by Weiyue Li, Bowei Chen, Ming Gao, Jingmin An, Hao Dong, Weiguo Fan, Zhiguo Zhu
 
