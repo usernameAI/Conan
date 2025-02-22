@@ -3,7 +3,7 @@ This is an implemention for our paper based on Pytorch
 
 Mamba-enhanced Contrastive Graph-Sequence Learning for Session-based Recommendation
 
-This paper is currently under anonymous peer review.
+This paper is currently under peer review.
 
 # Dataset
 We provide one dataset: Diginetica. 
