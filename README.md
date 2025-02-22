@@ -12,6 +12,8 @@ The Retailrocket dataset can be found at: https://www.kaggle.com/retailrocket/ec
 
 The Dressipi dataset can be found at: http://www.recsyschallenge.com/2022/#participation
 
+The KuaiRand dataset can be found at: https://kuairand.com
+
 # Example to run the codes
 1. Environment: I have tested this code with python3.7 Pytorch=1.13.1 CUDA=11.7
 
